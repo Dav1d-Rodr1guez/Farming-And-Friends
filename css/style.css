@@ -1,0 +1,85 @@
+:root {
+    --color1: #222831;
+    --color2: #76ABAE;
+    --color3: #88da27;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #212529;
+}
+.boton{
+    padding: 5px 20px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+    background: chocolate;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: .5s;
+}
+.boton:hover{
+    transform: scale(0.9);
+    background: var(--color3);
+    font-weight: bold;
+}
+header{
+    padding:100px 0 0 0 ;
+    height: 100vh;
+    background: url("../img/bghero.png") ;
+    background-size: cover;
+    background-position: left;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #fff;
+}
+header .boton{
+    position: relative;
+    margin-top: 42%;
+}
+header nav.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 0;
+    z-index: 999;
+    top: 0;
+}
+header nav.navbar a {
+    color: #fff;
+}
+header nav.navbar a:active{
+    color: #00ffff;
+}
+/* valores */
+#valores{
+    width: 100%;
+    padding: 100px 200px;
+    color: #fff;
+    background: var(--color1);
+    border-bottom: 2px solid #fff;
+}
+#valores h2{
+    color: var(--color2);
+}
+/* ganancias */
+#ganancias{
+    width: 100%;
+    padding: 100px 200px;
+    color: #fff;
+    background: var(--color1);
+    border-bottom: 2px solid #fff;
+}
+#ganancias h2{
+    color: var(--color2);
+}
+footer .container strong{
+    font-size: 25px;
+    color: var(--color2);
+}
