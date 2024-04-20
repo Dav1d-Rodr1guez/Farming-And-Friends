@@ -38,11 +38,8 @@ header{
     background-position: left;
     display: flex;
     justify-content: center;
+    align-items: flex-end;
     border-bottom: 2px solid #fff;
-}
-header .boton{
-    position: relative;
-    margin-top: 42%;
 }
 header nav.navbar{
     position: fixed;
@@ -82,4 +79,27 @@ header nav.navbar a:active{
 footer .container strong{
     font-size: 25px;
     color: var(--color2);
+}
+@media screen and (min-width:320px) and (max-width: 767px) {   
+    #hero{
+        background-position: center;
+        background-size: cover;
+        background: linear-gradient(to bottom, #000, #000, #000, var(--color2));
+        height: 100vh;
+        width: 100%;
+    }
+    #valores{
+        padding: 0 15px;
+    }
+    #valores form .mb-3{
+        display: block;
+        padding: 0;
+    }
+    #ganancias{
+        padding: 0 15px;
+    }
+    #ganancias form .mb-3{
+        display: block;
+        padding: 0;
+    }
 }
